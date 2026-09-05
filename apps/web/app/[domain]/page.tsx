@@ -13,9 +13,8 @@ export const revalidate = false; // cache indefinitely
 export async function generateMetadata(props: {
   params: Promise<{ domain: string }>;
 }) {
-  const params = await props.params;
-  const title = `${params.domain.toUpperCase()} - A Dub Custom Domain`;
-  const description = `${params.domain.toUpperCase()} is a custom domain on Dub - the modern link attribution platform for short links, conversion tracking, and affiliate programs.`;
+  const title = "RenderX - Web Development, IT Services & Digital Solutions";
+  const description = "RenderX crafts high-performance web applications, custom IT infrastructure, web design, and cutting-edge digital products to scale your business.";
 
   return constructMetadata({
     title,
@@ -49,7 +48,7 @@ export default function CustomDomainPage() {
               "animate-slide-up-fade motion-reduce:animate-fade-in [--offset:20px] [animation-duration:1s] [animation-fill-mode:both]",
             )}
           >
-            Welcome to Dub
+            RenderX &ndash; Next-Gen Tech & Web Development Solutions
           </h1>
           <p
             className={cn(
@@ -57,8 +56,7 @@ export default function CustomDomainPage() {
               "animate-slide-up-fade motion-reduce:animate-fade-in [--offset:10px] [animation-delay:200ms] [animation-duration:1s] [animation-fill-mode:both]",
             )}
           >
-            This custom domain is powered by Dub &ndash; the link management
-            platform designed for modern marketing teams.
+            We craft high-performance web applications, custom IT infrastructure, web design, and cutting-edge digital products to scale your business.
           </p>
         </div>
 
@@ -68,8 +66,8 @@ export default function CustomDomainPage() {
             "animate-slide-up-fade motion-reduce:animate-fade-in [--offset:5px] [animation-delay:300ms] [animation-duration:1s] [animation-fill-mode:both]",
           )}
         >
-          <ButtonLink variant="primary" href="https://app.dub.co/register">
-            Try Dub today
+          <ButtonLink variant="primary" href="#contact">
+            Book a Demo
           </ButtonLink>
           <LearnMoreButton utmParams={UTM_PARAMS} />
         </div>
